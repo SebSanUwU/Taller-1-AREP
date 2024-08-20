@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>All Users GET</h1>
+<button type="button" onclick="loadGetAllUsersMsg()">Reload List Users</button>
+<div id="getresallusers"></div>
+<div>
+    <h1>Form with GET</h1>
+    <img src="img/get_app_24dp_E8EAED.png"/>
+</div>
+<form action="/api/user">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" value="John"><br><br>
+    <input type="button" value="Submit" onclick="loadGetMsg()">
+</form>
+<div id="getrespmsg"></div>
+
+<div>
+    <h1>Form with POST</h1>
+    <img src="img/local_shipping_24dp_E8EAED.png">
+</div>
+<form action="/">
+    <label for="postname">Name:</label><br>
+    <input type="text" id="postname" name="name" value="John"><br><br>
+    <label for="postemail">Email:</label><br>
+    <input type="text" id="postemail" name="email" value="@example.com"><br><br>
+    <input type="button" value="Submit" onclick="loadPostMsg(postname,postemail)">
+</form>
+<div id="postrespmsg"></div>
+
+<h2>Current Time</h2>
+<p id="clock"></p>
+
+<script src="app.js"></script>
+</body>
+</html>
+

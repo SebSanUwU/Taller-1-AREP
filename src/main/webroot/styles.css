@@ -1,0 +1,128 @@
+/* Reseteo de márgenes y padding para uniformidad entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+div {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    margin-bottom: 20px; /* Espacio entre cada sección */
+}
+
+img {
+    width: 1.5em; /* Ajuste del tamaño de la imagen en función de la fuente */
+    height: 1.5em;
+    filter: invert(50%); /* Contrasta mejor con el fondo blanco */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="button"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+button{
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    max-width: 400px;
+    width: 100%;
+}
+
+#postrespmsg, #getrespmsg, #getresallusers {
+    margin-top: 20px;
+    margin-bottom:20px;
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    max-width: 800px;
+    word-wrap: break-word;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="button"] {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
