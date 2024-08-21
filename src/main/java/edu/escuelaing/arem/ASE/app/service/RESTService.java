@@ -1,4 +1,4 @@
-package main.java.service;
+package edu.escuelaing.arem.ASE.app.service;
 
 public interface RESTService {
     public String response (String request);

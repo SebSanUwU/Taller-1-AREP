@@ -1,6 +1,7 @@
 package edu.escuelaing.arem.ASE.app;
 
-import main.java.service.RESTService;
+
+import edu.escuelaing.arem.ASE.app.service.RESTService;
 import edu.escuelaing.arem.ASE.app.service.UserService;
 
 import java.io.*;

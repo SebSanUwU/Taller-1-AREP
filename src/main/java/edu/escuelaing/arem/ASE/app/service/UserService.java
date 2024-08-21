@@ -2,7 +2,6 @@ package edu.escuelaing.arem.ASE.app.service;
 
 import com.nimbusds.jose.shaded.gson.Gson;
 import edu.escuelaing.arem.ASE.app.model.User;
-import main.java.service.RESTService;
 
 import java.util.*;
 
